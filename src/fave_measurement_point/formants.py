@@ -87,14 +87,15 @@ class Formant():
     """
     track: NDArray
     time: NDArray = field(default_factory=lambda: np.array([]))
+    offset: float = field(default=0)
 
     def __post_init__(self):
         if self.time.size == 0:
             idx_time = np.arange(self.track.size)
             self.time = idx_time/idx_time.max()
         
-        self.rel_time = self.time - self.time.min()
-        self.prop_time = self.rel_time / self.rel_time.max()
+        self.rel_time = (self.time - self.time.min()) + self.offset
+        self.prop_time = self.rel_time / (self.rel_time.max() + self.offset)
     
     def __repr__(self):
        return f"Formant(min: {self.min.value:.0f}, max: {self.max.value:.0f}, dur: {self.rel_time.max():.3f})"
@@ -142,6 +143,7 @@ class FormantArray():
     """
     array: NDArray
     time: NDArray = field(default_factory=lambda: np.array([]))
+    offset: float = field(default=0)
 
     def __post_init__(self):
         if self.time.size == 0:
@@ -152,14 +154,14 @@ class FormantArray():
             "The number of formant samples should match "\
             "the number of time points"
 
-        self.rel_time = self.time - self.time.min()
-        self.prop_time = self.rel_time / self.rel_time.max()
+        self.rel_time = (self.time - self.time.min()) + self.offset
+        self.prop_time = self.rel_time / (self.rel_time.max() + self.offset)
 
         for i in range(self.array.shape[0]):
             setattr(
                 self,
                 f"f{i+1}",
-                Formant(self.array[i,:], self.time)
+                Formant(self.array[i,:], self.time, self.offset)
             )
 
     def __repr__(self):
