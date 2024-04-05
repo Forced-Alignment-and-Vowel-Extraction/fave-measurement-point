@@ -5,6 +5,20 @@ from dataclasses import dataclass, field
 
 @dataclass
 class Point():
+    """A single point
+
+    Args:
+        value (float):
+            Formant value
+        time (float):
+            Time of point
+        rel_time (float):
+            Relative time of point
+        prop_time (float):
+            Proportional time of point
+        index (int):
+            Index of point
+    """
     value: float
     time: float
     rel_time: float
@@ -13,6 +27,24 @@ class Point():
 
 @dataclass
 class Slice():
+    """A slice across formants
+
+    Args:
+        formants (np.array): 
+            The formant values
+        time (float):
+            The time of the slice
+        rel_time (float):
+            The relative time of the slice
+        prop_time (float):
+            The proportional time of the slice
+        index:
+            The index of the slice
+    
+    Attributes:
+        f[1,2,3,...] (float):
+            Specific formant values at the slice.
+    """
     formants: NDArray
     time: float
     rel_time: float
@@ -32,6 +64,27 @@ class Slice():
 
 @dataclass
 class Formant():
+    """A single formant
+    Args:
+        track (np.array):
+            The formant track values
+        time (np.array|None):
+            The time domain of the formant track. Optional
+
+    Attributes:
+        time (np.array):
+            The time domain.
+        rel_time (np.array):
+            The relative time of the formant
+        prop_time (np.array):
+            The proportional time of the formant
+        shape (tuple):
+            The shape of the formant
+        max (Point):
+            A Point for the formant maximum
+        min (Point):
+            A Point for the formant minimum
+    """
     track: NDArray
     time: NDArray = field(default=np.array([]))
 
@@ -67,9 +120,26 @@ class Formant():
         min_rel_time = self.rel_time[min_idx]
         min_prop_time = self.prop_time[min_idx]
         return Point(min_value, min_time, min_rel_time, min_prop_time, min_idx)
-    x
+    
 @dataclass
 class FormantArray():
+    """A representation of multiple formant tracks
+
+    Args:
+        array (np.array):
+            An array of formant tracks
+        time (np.array|None):
+            The time domain of the formant tracks. Optional.
+    
+    Attributes:
+        rel_time:
+            The relative time domain
+        prop_time:
+            The proportional time domain
+        f[1, 2, 3, ...] (np.array):
+            Specific formant tracks.
+
+    """
     array: NDArray
     time: NDArray = field(default=np.array([]))
 
@@ -106,22 +176,42 @@ class FormantArray():
             time: float = None,
             rel_time: float = None,
             prop_time: float = None
-    ):
-        passed = [time, rel_time, prop_time]
+    ) -> Slice:
+        """Get a formant slice at some time point.
+
+        One, and only one, of the time arguments 
+        (`time`, `rel_time`, `prop_time`) must be specified.
+
+        Args:
+            time (float, optional): 
+                The absolute time of the slice. Defaults to None.
+            rel_time (float, optional): 
+                The relative time of the slice. Defaults to None.
+            prop_time (float, optional): 
+                The proportional time of the slice. Defaults to None.
+
+        Returns:
+            (Slice):
+                A formant slice at the specified time.
+        """
+        passed = [
+            x is not None
+            for x in [time, rel_time, prop_time]
+        ]
         if not any(passed):
             raise ValueError("One time parameter must be defined.")
         
         defined = [x for x in passed if x]
         if len(defined) > 1:
-            raise ValueError("Only one time parameter must be defined.")
+            raise ValueError("Only one time parameter can be defined.")
         
-        if time:
+        if time is not None:
             closest_idx = np.abs(self.time - time).argmin()
         
-        if rel_time:
+        if rel_time is not None:
             closest_idx = np.abs(self.rel_time - rel_time).argmin()
         
-        if prop_time:
+        if prop_time is not None:
             closest_idx = np.abs(self.prop_time - prop_time).argmin()
         
         return Slice(
