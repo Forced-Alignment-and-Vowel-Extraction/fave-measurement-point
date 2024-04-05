@@ -86,7 +86,7 @@ class Formant():
             A Point for the formant minimum
     """
     track: NDArray
-    time: NDArray = field(default=np.array([]))
+    time: NDArray = field(default_factory=lambda x: np.array([]))
 
     def __post_init__(self):
         if self.time.size == 0:
@@ -141,7 +141,7 @@ class FormantArray():
 
     """
     array: NDArray
-    time: NDArray = field(default=np.array([]))
+    time: NDArray = field(default_factory=lambda x: np.array([]))
 
     def __post_init__(self):
         if self.time.size == 0:
