@@ -98,20 +98,21 @@ class Heuristic():
     
 
 class Specific():
+    """A specific measurement point heuristic
+
+    Args:
+        specific (dict):
+            A dictionary with a label and a 
+            measurement point landmark
+
+    Attributes:
+        label (str): 
+            The label for the specific measurement point
+        kwarg (dict):
+            The kwargs to be passed to FormantArray.get_slice_at()
+    """    
     def __init__(self, specific: dict):
-        """A specific measurement point heuristic
 
-        Args:
-            specific (dict):
-                A dictionary with a label and a 
-                measurement point landmark
-
-        Attributes:
-            label (str): 
-                The label for the specific measurement pint
-            kwarg (dict):
-                The kwargs to be passed to FormantArray.get_slice_at()
-        """
         self.label = specific["label"]
         self.kwarg = {
             k: specific[k]

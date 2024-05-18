@@ -70,7 +70,7 @@ def inject_values(
             A landmark expression
         formants (FormantArray): 
             The formant array from which to get 
-            the numerc values
+            the numeric values
 
     Returns:
         (str): The numeric string

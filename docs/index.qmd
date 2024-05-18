@@ -1,0 +1,15 @@
+---
+title: fave-measurement-point
+date-modified: last-modified
+date-format: YYYY-MM-DD HH:mm:ssZ
+language:
+    title-block-modified: "Docs Last Built"
+---
+
+This is a package to easily define and access vowel formant measurement points.
+
+# Usage
+
+The way to define measurement point heuristics is documented here,
+but this package is not inteded to be directly used. Rather
+see the [new-fave](https://forced-alignment-and-vowel-extraction.github.io/new-fave/).
