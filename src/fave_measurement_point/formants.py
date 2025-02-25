@@ -61,6 +61,13 @@ class Slice():
                 self.index
             )
             setattr(self, f"f{i+1}", this_point)
+    
+    def __len__(self):
+        return self.formants.size
+
+    def __getitem__(self, idx):
+        p = getattr(self, f"f{idx+1}")
+        return p
 
 @dataclass
 class Formant():
@@ -70,6 +77,8 @@ class Formant():
             The formant track values
         time (np.array|None):
             The time domain of the formant track. Optional
+        offset (float):
+            A time offset
 
     Attributes:
         time (np.array):
@@ -133,9 +142,9 @@ class FormantArray():
             The time domain of the formant tracks. Optional.
     
     Attributes:
-        rel_time:
+        rel_time (np.array):
             The relative time domain
-        prop_time:
+        prop_time (np.array):
             The proportional time domain
         f[1, 2, 3, ...] (np.array):
             Specific formant tracks.
