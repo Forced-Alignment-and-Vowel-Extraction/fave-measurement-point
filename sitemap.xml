@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://Forced-Alignment-and-Vowel-Extraction.github.io/fave-measurement-point/usage/heuristic.html</loc>
-    <lastmod>2024-05-18T16:22:57.081Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Forced-Alignment-and-Vowel-Extraction.github.io/fave-measurement-point/reference/formants.Point.html</loc>
-    <lastmod>2024-05-18T16:23:25.613Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Forced-Alignment-and-Vowel-Extraction.github.io/fave-measurement-point/reference/heuristic.Heuristic.html</loc>
-    <lastmod>2024-05-18T16:23:25.597Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Forced-Alignment-and-Vowel-Extraction.github.io/fave-measurement-point/reference/formants.Slice.html</loc>
-    <lastmod>2024-05-18T16:23:25.617Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Forced-Alignment-and-Vowel-Extraction.github.io/fave-measurement-point/reference/index.html</loc>
-    <lastmod>2024-05-18T16:23:25.577Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Forced-Alignment-and-Vowel-Extraction.github.io/fave-measurement-point/reference/formants.Formant.html</loc>
-    <lastmod>2024-05-18T16:23:25.601Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Forced-Alignment-and-Vowel-Extraction.github.io/fave-measurement-point/reference/heuristic.Specific.html</loc>
-    <lastmod>2024-05-18T16:23:25.597Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Forced-Alignment-and-Vowel-Extraction.github.io/fave-measurement-point/reference/formants.FormantArray.html</loc>
-    <lastmod>2024-05-18T16:23:25.609Z</lastmod>
+    <loc>https://Forced-Alignment-and-Vowel-Extraction.github.io/fave-measurement-point/index.html</loc>
+    <lastmod>2025-02-25T19:44:32.303Z</lastmod>
   </url>
   <url>
     <loc>https://Forced-Alignment-and-Vowel-Extraction.github.io/fave-measurement-point/reference/processor.html</loc>
-    <lastmod>2024-05-18T16:23:25.633Z</lastmod>
+    <lastmod>2025-02-25T19:44:59.014Z</lastmod>
   </url>
   <url>
-    <loc>https://Forced-Alignment-and-Vowel-Extraction.github.io/fave-measurement-point/index.html</loc>
-    <lastmod>2024-05-18T16:22:57.081Z</lastmod>
+    <loc>https://Forced-Alignment-and-Vowel-Extraction.github.io/fave-measurement-point/reference/formants.FormantArray.html</loc>
+    <lastmod>2025-02-25T19:44:58.991Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Forced-Alignment-and-Vowel-Extraction.github.io/fave-measurement-point/reference/formants.Point.html</loc>
+    <lastmod>2025-02-25T19:44:58.995Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Forced-Alignment-and-Vowel-Extraction.github.io/fave-measurement-point/reference/formants.Slice.html</loc>
+    <lastmod>2025-02-25T19:44:58.999Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Forced-Alignment-and-Vowel-Extraction.github.io/fave-measurement-point/usage/heuristic.html</loc>
+    <lastmod>2025-02-25T19:44:32.303Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Forced-Alignment-and-Vowel-Extraction.github.io/fave-measurement-point/reference/heuristic.Specific.html</loc>
+    <lastmod>2025-02-25T19:44:58.981Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Forced-Alignment-and-Vowel-Extraction.github.io/fave-measurement-point/reference/formants.Formant.html</loc>
+    <lastmod>2025-02-25T19:44:58.984Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Forced-Alignment-and-Vowel-Extraction.github.io/fave-measurement-point/reference/index.html</loc>
+    <lastmod>2025-02-25T19:44:58.961Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Forced-Alignment-and-Vowel-Extraction.github.io/fave-measurement-point/reference/heuristic.Heuristic.html</loc>
+    <lastmod>2025-02-25T19:44:58.978Z</lastmod>
   </url>
 </urlset>
