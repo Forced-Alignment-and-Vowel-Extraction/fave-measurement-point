@@ -1,173 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "fave-measurement-point",
-    "section": "",
-    "text": "This is a package to easily define and access vowel formant measurement points.\n\nUsage\nThe way to define measurement point heuristics is documented here, but this package is not inteded to be directly used. Rather see the new-fave.",
-    "crumbs": [
-      "Home",
-      "fave-measurement-point"
-    ]
-  },
-  {
-    "objectID": "reference/processor.html",
-    "href": "reference/processor.html",
-    "title": "processor",
-    "section": "",
-    "text": "processor\n\n\n\n\n\nName\nDescription\n\n\n\n\nbuild_expressions\nBuild a list of valid landmark expressions\n\n\nevaluate_math\nEnsure the landmark expression is only\n\n\nfind_vars\nFind landmark variables in expression\n\n\ninject_values\nReplace landmark variable names with\n\n\nparse_expression\nParse a landmark expression and return\n\n\nrgetattr\ngets object attribute from string\n\n\n\n\n\nprocessor.build_expressions()\nBuild a list of valid landmark expressions\n\n\n\n\n\nType\nDescription\n\n\n\n\nlist[str]\nList of landmark regexes\n\n\n\n\n\n\n\nprocessor.evaluate_math(x)\nEnsure the landmark expression is only valid mathematical expressions.\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\nx\nstr\nThe numeric string\nrequired\n\n\n\n\n\n\n\n\n\nType\nDescription\n\n\n\n\nbool\nIf the string is only valid math, True. Else, False.\n\n\n\n\n\n\n\nprocessor.find_vars(expression)\nFind landmark variables in expression\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\nexpression\nstr\nAn expression defining a landmark location\nrequired\n\n\n\n\n\n\n\n\n\nType\nDescription\n\n\n\n\nlist[str]\nList of landmark variables\n\n\n\n\n\n\n\nprocessor.inject_values(expression, formants)\nReplace landmark variable names with numeric strings.\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\nexpression\nstr\nA landmark expression\nrequired\n\n\nformants\nFormantArray\nThe formant array from which to get the numeric values\nrequired\n\n\n\n\n\n\n\n\n\nType\nDescription\n\n\n\n\nstr\nThe numeric string\n\n\n\n\n\n\n\nprocessor.parse_expression(expression, formants)\nParse a landmark expression and return the resulting numeric value.\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\nexpression\nstr\nA landmark expression\nrequired\n\n\nformants\nFormantArray\nThe formant array with which to evaluate the expression\nrequired\n\n\n\n\n\n\n\n\n\nType\nDescription\n\n\n\n\nfloat\nThe resulting value\n\n\n\n\n\n\n\nprocessor.rgetattr(obj, attr, *args)\ngets object attribute from string\n\n\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\nobj\ntype\nobject\nrequired\n\n\nattr\nstr\nattribute path attr.attr.attr\nrequired",
-    "crumbs": [
-      "Processors",
-      "processor"
-    ]
-  },
-  {
-    "objectID": "reference/processor.html#functions",
-    "href": "reference/processor.html#functions",
-    "title": "processor",
-    "section": "",
-    "text": "Name\nDescription\n\n\n\n\nbuild_expressions\nBuild a list of valid landmark expressions\n\n\nevaluate_math\nEnsure the landmark expression is only\n\n\nfind_vars\nFind landmark variables in expression\n\n\ninject_values\nReplace landmark variable names with\n\n\nparse_expression\nParse a landmark expression and return\n\n\nrgetattr\ngets object attribute from string\n\n\n\n\n\nprocessor.build_expressions()\nBuild a list of valid landmark expressions\n\n\n\n\n\nType\nDescription\n\n\n\n\nlist[str]\nList of landmark regexes\n\n\n\n\n\n\n\nprocessor.evaluate_math(x)\nEnsure the landmark expression is only valid mathematical expressions.\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\nx\nstr\nThe numeric string\nrequired\n\n\n\n\n\n\n\n\n\nType\nDescription\n\n\n\n\nbool\nIf the string is only valid math, True. Else, False.\n\n\n\n\n\n\n\nprocessor.find_vars(expression)\nFind landmark variables in expression\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\nexpression\nstr\nAn expression defining a landmark location\nrequired\n\n\n\n\n\n\n\n\n\nType\nDescription\n\n\n\n\nlist[str]\nList of landmark variables\n\n\n\n\n\n\n\nprocessor.inject_values(expression, formants)\nReplace landmark variable names with numeric strings.\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\nexpression\nstr\nA landmark expression\nrequired\n\n\nformants\nFormantArray\nThe formant array from which to get the numeric values\nrequired\n\n\n\n\n\n\n\n\n\nType\nDescription\n\n\n\n\nstr\nThe numeric string\n\n\n\n\n\n\n\nprocessor.parse_expression(expression, formants)\nParse a landmark expression and return the resulting numeric value.\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\nexpression\nstr\nA landmark expression\nrequired\n\n\nformants\nFormantArray\nThe formant array with which to evaluate the expression\nrequired\n\n\n\n\n\n\n\n\n\nType\nDescription\n\n\n\n\nfloat\nThe resulting value\n\n\n\n\n\n\n\nprocessor.rgetattr(obj, attr, *args)\ngets object attribute from string\n\n\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\nobj\ntype\nobject\nrequired\n\n\nattr\nstr\nattribute path attr.attr.attr\nrequired",
-    "crumbs": [
-      "Processors",
-      "processor"
-    ]
-  },
-  {
-    "objectID": "reference/formants.FormantArray.html",
-    "href": "reference/formants.FormantArray.html",
-    "title": "formants.FormantArray",
-    "section": "",
-    "text": "formants.FormantArray(self, array, time=lambda: np.array([])(), offset=0)\nA representation of multiple formant tracks\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\narray\nnp.array\nAn array of formant tracks\nrequired\n\n\ntime\nnp.array | None\nThe time domain of the formant tracks. Optional.\nlambda: np.array([])()\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\n\n\n\n\nrel_time\nnp.array\nThe relative time domain\n\n\nprop_time\nnp.array\nThe proportional time domain\n\n\nf[1,\n2, 3, …] (np.array\nSpecific formant tracks.\n\n\n\n\n\n\n\n\n\nName\nDescription\n\n\n\n\nget_slice_at\nGet a formant slice at some time point.\n\n\n\n\n\nformants.FormantArray.get_slice_at(time=None, rel_time=None, prop_time=None)\nGet a formant slice at some time point.\nOne, and only one, of the time arguments (time, rel_time, prop_time) must be specified.\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\ntime\nfloat\nThe absolute time of the slice. Defaults to None.\nNone\n\n\nrel_time\nfloat\nThe relative time of the slice. Defaults to None.\nNone\n\n\nprop_time\nfloat\nThe proportional time of the slice. Defaults to None.\nNone\n\n\n\n\n\n\n\n\n\nType\nDescription\n\n\n\n\nSlice\nA formant slice at the specified time.",
-    "crumbs": [
-      "Formants",
-      "formants.FormantArray"
-    ]
-  },
-  {
-    "objectID": "reference/formants.FormantArray.html#parameters",
-    "href": "reference/formants.FormantArray.html#parameters",
-    "title": "formants.FormantArray",
-    "section": "",
-    "text": "Name\nType\nDescription\nDefault\n\n\n\n\narray\nnp.array\nAn array of formant tracks\nrequired\n\n\ntime\nnp.array | None\nThe time domain of the formant tracks. Optional.\nlambda: np.array([])()",
-    "crumbs": [
-      "Formants",
-      "formants.FormantArray"
-    ]
-  },
-  {
-    "objectID": "reference/formants.FormantArray.html#attributes",
-    "href": "reference/formants.FormantArray.html#attributes",
-    "title": "formants.FormantArray",
-    "section": "",
-    "text": "Name\nType\nDescription\n\n\n\n\nrel_time\nnp.array\nThe relative time domain\n\n\nprop_time\nnp.array\nThe proportional time domain\n\n\nf[1,\n2, 3, …] (np.array\nSpecific formant tracks.",
-    "crumbs": [
-      "Formants",
-      "formants.FormantArray"
-    ]
-  },
-  {
-    "objectID": "reference/formants.FormantArray.html#methods",
-    "href": "reference/formants.FormantArray.html#methods",
-    "title": "formants.FormantArray",
-    "section": "",
-    "text": "Name\nDescription\n\n\n\n\nget_slice_at\nGet a formant slice at some time point.\n\n\n\n\n\nformants.FormantArray.get_slice_at(time=None, rel_time=None, prop_time=None)\nGet a formant slice at some time point.\nOne, and only one, of the time arguments (time, rel_time, prop_time) must be specified.\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\ntime\nfloat\nThe absolute time of the slice. Defaults to None.\nNone\n\n\nrel_time\nfloat\nThe relative time of the slice. Defaults to None.\nNone\n\n\nprop_time\nfloat\nThe proportional time of the slice. Defaults to None.\nNone\n\n\n\n\n\n\n\n\n\nType\nDescription\n\n\n\n\nSlice\nA formant slice at the specified time.",
-    "crumbs": [
-      "Formants",
-      "formants.FormantArray"
-    ]
-  },
-  {
-    "objectID": "reference/formants.Point.html",
-    "href": "reference/formants.Point.html",
-    "title": "formants.Point",
-    "section": "",
-    "text": "formants.Point(self, value, time, rel_time, prop_time, index)\nA single point\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\nvalue\nfloat\nFormant value\nrequired\n\n\ntime\nfloat\nTime of point\nrequired\n\n\nrel_time\nfloat\nRelative time of point\nrequired\n\n\nprop_time\nfloat\nProportional time of point\nrequired\n\n\nindex\nint\nIndex of point\nrequired",
-    "crumbs": [
-      "Formants",
-      "formants.Point"
-    ]
-  },
-  {
-    "objectID": "reference/formants.Point.html#parameters",
-    "href": "reference/formants.Point.html#parameters",
-    "title": "formants.Point",
-    "section": "",
-    "text": "Name\nType\nDescription\nDefault\n\n\n\n\nvalue\nfloat\nFormant value\nrequired\n\n\ntime\nfloat\nTime of point\nrequired\n\n\nrel_time\nfloat\nRelative time of point\nrequired\n\n\nprop_time\nfloat\nProportional time of point\nrequired\n\n\nindex\nint\nIndex of point\nrequired",
-    "crumbs": [
-      "Formants",
-      "formants.Point"
-    ]
-  },
-  {
-    "objectID": "reference/formants.Slice.html",
-    "href": "reference/formants.Slice.html",
-    "title": "formants.Slice",
-    "section": "",
-    "text": "formants.Slice(self, formants, time, rel_time, prop_time, index)\nA slice across formants\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\nformants\nnp.array\nThe formant values\nrequired\n\n\ntime\nfloat\nThe time of the slice\nrequired\n\n\nrel_time\nfloat\nThe relative time of the slice\nrequired\n\n\nprop_time\nfloat\nThe proportional time of the slice\nrequired\n\n\nindex\nint\nThe index of the slice\nrequired\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\n\n\n\n\nf[1,2,3,…]\nfloat\nSpecific formant values at the slice.",
-    "crumbs": [
-      "Formants",
-      "formants.Slice"
-    ]
-  },
-  {
-    "objectID": "reference/formants.Slice.html#parameters",
-    "href": "reference/formants.Slice.html#parameters",
-    "title": "formants.Slice",
-    "section": "",
-    "text": "Name\nType\nDescription\nDefault\n\n\n\n\nformants\nnp.array\nThe formant values\nrequired\n\n\ntime\nfloat\nThe time of the slice\nrequired\n\n\nrel_time\nfloat\nThe relative time of the slice\nrequired\n\n\nprop_time\nfloat\nThe proportional time of the slice\nrequired\n\n\nindex\nint\nThe index of the slice\nrequired",
-    "crumbs": [
-      "Formants",
-      "formants.Slice"
-    ]
-  },
-  {
-    "objectID": "reference/formants.Slice.html#attributes",
-    "href": "reference/formants.Slice.html#attributes",
-    "title": "formants.Slice",
-    "section": "",
-    "text": "Name\nType\nDescription\n\n\n\n\nf[1,2,3,…]\nfloat\nSpecific formant values at the slice.",
-    "crumbs": [
-      "Formants",
-      "formants.Slice"
-    ]
-  },
-  {
-    "objectID": "usage/heuristic.html",
-    "href": "usage/heuristic.html",
-    "title": "Defining measurement point heuristics",
-    "section": "",
-    "text": "A heuristic file is a yaml file with the following format:\nThe yaml file above, in fact, is the same as the default heuristic if none are provided.",
-    "crumbs": [
-      "Home",
-      "Usage",
-      "Defining measurement point heuristics"
-    ]
-  },
-  {
-    "objectID": "usage/heuristic.html#specifics",
-    "href": "usage/heuristic.html#specifics",
-    "title": "Defining measurement point heuristics",
-    "section": "Specifics",
-    "text": "Specifics\nLet’s say you wanted to define a special measurement point rule for just the vowel /ay/, to measure it at maximum F1. This can be done by adding the following rule to the specifics list.\n\nyaml\n\nheuristic: ay-rule\ndefault:\n    prop_time: \"1/3\"\nspecifics:\n    - label: ay\n      prop_time: f1.max.prop_time\nWhat this says is:\n\nApply a special measurement point rule when the interval label is “ay”.\nGet the measurement point where the vowel’s prop_time is equal to the prop_time of F1 maximum.",
-    "crumbs": [
-      "Home",
-      "Usage",
-      "Defining measurement point heuristics"
-    ]
-  },
-  {
-    "objectID": "usage/heuristic.html#valid-point-expressions",
-    "href": "usage/heuristic.html#valid-point-expressions",
-    "title": "Defining measurement point heuristics",
-    "section": "Valid point expressions",
-    "text": "Valid point expressions\nThe expression f1.max.prop_time defines the proportional time of F1 maximum. An entire point expression will always be of the format:\nformant.anchor.time\nValid values for each slot are:\n\nFormants\n\nf1, f2, f3, …\nAny formant that’s available\n\nAnchor\n\nmin\nmax\n\nTime\n\ntime\nrel_time\nprop_time\n\n\nAdditionally, any other mathematical expression can be included. For example, the original FAVE suite had a measurement point heuristic for /aw/ and /ow/ defined in the docs as:\n# - OW, AW measured halfway between beginning of segment and F1 maximum  ##\nThe heuristic file for this would look like:\n\nyaml\n\nheuristic: aw-ow-rule\ndefault:\n    prop_time: \"1/3\"\nspecifics:\n    - label: aw\n      prop_time: f1.max.prop_time / 2\n    - label: ow\n      prop_time: f1.max.prop_time / 2",
-    "crumbs": [
-      "Home",
-      "Usage",
-      "Defining measurement point heuristics"
-    ]
-  },
-  {
     "objectID": "reference/heuristic.Specific.html",
     "href": "reference/heuristic.Specific.html",
     "title": "heuristic.Specific",
@@ -201,65 +33,36 @@
     ]
   },
   {
-    "objectID": "reference/formants.Formant.html",
-    "href": "reference/formants.Formant.html",
-    "title": "formants.Formant",
+    "objectID": "reference/formants.Slice.html",
+    "href": "reference/formants.Slice.html",
+    "title": "formants.Slice",
     "section": "",
-    "text": "formants.Formant(self, track, time=lambda: np.array([])(), offset=0)\nA single formant Args: track (np.array): The formant track values time (np.array|None): The time domain of the formant track. Optional offset (float): A time offset\n\n\n\n\n\nName\nType\nDescription\n\n\n\n\ntime\nnp.array\nThe time domain.\n\n\nrel_time\nnp.array\nThe relative time of the formant\n\n\nprop_time\nnp.array\nThe proportional time of the formant\n\n\nshape\ntuple\nThe shape of the formant\n\n\nmax\nPoint\nA Point for the formant maximum\n\n\nmin\nPoint\nA Point for the formant minimum",
+    "text": "formants.Slice(self, formants, time, rel_time, prop_time, index)\nA slice across formants\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\nformants\nnp.array\nThe formant values\nrequired\n\n\ntime\nfloat\nThe time of the slice\nrequired\n\n\nrel_time\nfloat\nThe relative time of the slice\nrequired\n\n\nprop_time\nfloat\nThe proportional time of the slice\nrequired\n\n\nindex\nint\nThe index of the slice\nrequired\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\n\n\n\n\nf[1,2,3,…]\nfloat\nSpecific formant values at the slice.",
     "crumbs": [
       "Formants",
-      "formants.Formant"
+      "formants.Slice"
     ]
   },
   {
-    "objectID": "reference/formants.Formant.html#attributes",
-    "href": "reference/formants.Formant.html#attributes",
-    "title": "formants.Formant",
+    "objectID": "reference/formants.Slice.html#parameters",
+    "href": "reference/formants.Slice.html#parameters",
+    "title": "formants.Slice",
     "section": "",
-    "text": "Name\nType\nDescription\n\n\n\n\ntime\nnp.array\nThe time domain.\n\n\nrel_time\nnp.array\nThe relative time of the formant\n\n\nprop_time\nnp.array\nThe proportional time of the formant\n\n\nshape\ntuple\nThe shape of the formant\n\n\nmax\nPoint\nA Point for the formant maximum\n\n\nmin\nPoint\nA Point for the formant minimum",
+    "text": "Name\nType\nDescription\nDefault\n\n\n\n\nformants\nnp.array\nThe formant values\nrequired\n\n\ntime\nfloat\nThe time of the slice\nrequired\n\n\nrel_time\nfloat\nThe relative time of the slice\nrequired\n\n\nprop_time\nfloat\nThe proportional time of the slice\nrequired\n\n\nindex\nint\nThe index of the slice\nrequired",
     "crumbs": [
       "Formants",
-      "formants.Formant"
+      "formants.Slice"
     ]
   },
   {
-    "objectID": "reference/index.html",
-    "href": "reference/index.html",
-    "title": "Function reference",
+    "objectID": "reference/formants.Slice.html#attributes",
+    "href": "reference/formants.Slice.html#attributes",
+    "title": "formants.Slice",
     "section": "",
-    "text": "Classes for defining measurement point heuristics\n\n\n\nheuristic.Heuristic\nA measurement heuristic class\n\n\nheuristic.Specific\nA specific measurement point heuristic\n\n\n\n\n\n\nClasses for representing formant tracks and points\n\n\n\nformants.Formant\nA single formant\n\n\nformants.FormantArray\nA representation of multiple formant tracks\n\n\nformants.Point\nA single point\n\n\nformants.Slice\nA slice across formants\n\n\n\n\n\n\nHelper functions for parsing landmark expressions\n\n\n\nprocessor",
+    "text": "Name\nType\nDescription\n\n\n\n\nf[1,2,3,…]\nfloat\nSpecific formant values at the slice.",
     "crumbs": [
-      "Function reference"
-    ]
-  },
-  {
-    "objectID": "reference/index.html#hueristics",
-    "href": "reference/index.html#hueristics",
-    "title": "Function reference",
-    "section": "",
-    "text": "Classes for defining measurement point heuristics\n\n\n\nheuristic.Heuristic\nA measurement heuristic class\n\n\nheuristic.Specific\nA specific measurement point heuristic",
-    "crumbs": [
-      "Function reference"
-    ]
-  },
-  {
-    "objectID": "reference/index.html#formants",
-    "href": "reference/index.html#formants",
-    "title": "Function reference",
-    "section": "",
-    "text": "Classes for representing formant tracks and points\n\n\n\nformants.Formant\nA single formant\n\n\nformants.FormantArray\nA representation of multiple formant tracks\n\n\nformants.Point\nA single point\n\n\nformants.Slice\nA slice across formants",
-    "crumbs": [
-      "Function reference"
-    ]
-  },
-  {
-    "objectID": "reference/index.html#processors",
-    "href": "reference/index.html#processors",
-    "title": "Function reference",
-    "section": "",
-    "text": "Helper functions for parsing landmark expressions\n\n\n\nprocessor",
-    "crumbs": [
-      "Function reference"
+      "Formants",
+      "formants.Slice"
     ]
   },
   {
@@ -304,6 +107,203 @@
     "crumbs": [
       "Hueristics",
       "heuristic.Heuristic"
+    ]
+  },
+  {
+    "objectID": "reference/formants.Formant.html",
+    "href": "reference/formants.Formant.html",
+    "title": "formants.Formant",
+    "section": "",
+    "text": "formants.Formant(self, track, time=lambda: np.array([])(), offset=0)\nA single formant Args: track (np.array): The formant track values time (np.array|None): The time domain of the formant track. Optional offset (float): A time offset\n\n\n\n\n\nName\nType\nDescription\n\n\n\n\ntime\nnp.array\nThe time domain.\n\n\nrel_time\nnp.array\nThe relative time of the formant\n\n\nprop_time\nnp.array\nThe proportional time of the formant\n\n\nshape\ntuple\nThe shape of the formant\n\n\nmax\nPoint\nA Point for the formant maximum\n\n\nmin\nPoint\nA Point for the formant minimum",
+    "crumbs": [
+      "Formants",
+      "formants.Formant"
+    ]
+  },
+  {
+    "objectID": "reference/formants.Formant.html#attributes",
+    "href": "reference/formants.Formant.html#attributes",
+    "title": "formants.Formant",
+    "section": "",
+    "text": "Name\nType\nDescription\n\n\n\n\ntime\nnp.array\nThe time domain.\n\n\nrel_time\nnp.array\nThe relative time of the formant\n\n\nprop_time\nnp.array\nThe proportional time of the formant\n\n\nshape\ntuple\nThe shape of the formant\n\n\nmax\nPoint\nA Point for the formant maximum\n\n\nmin\nPoint\nA Point for the formant minimum",
+    "crumbs": [
+      "Formants",
+      "formants.Formant"
+    ]
+  },
+  {
+    "objectID": "usage/heuristic.html",
+    "href": "usage/heuristic.html",
+    "title": "Defining measurement point heuristics",
+    "section": "",
+    "text": "A heuristic file is a yaml file with the following format:\nThe yaml file above, in fact, is the same as the default heuristic if none are provided.",
+    "crumbs": [
+      "Home",
+      "Usage",
+      "Defining measurement point heuristics"
+    ]
+  },
+  {
+    "objectID": "usage/heuristic.html#specifics",
+    "href": "usage/heuristic.html#specifics",
+    "title": "Defining measurement point heuristics",
+    "section": "Specifics",
+    "text": "Specifics\nLet’s say you wanted to define a special measurement point rule for just the vowel /ay/, to measure it at maximum F1. This can be done by adding the following rule to the specifics list.\n\nyaml\n\nheuristic: ay-rule\ndefault:\n    prop_time: \"1/3\"\nspecifics:\n    - label: ay\n      prop_time: f1.max.prop_time\nWhat this says is:\n\nApply a special measurement point rule when the interval label is “ay”.\nGet the measurement point where the vowel’s prop_time is equal to the prop_time of F1 maximum.",
+    "crumbs": [
+      "Home",
+      "Usage",
+      "Defining measurement point heuristics"
+    ]
+  },
+  {
+    "objectID": "usage/heuristic.html#valid-point-expressions",
+    "href": "usage/heuristic.html#valid-point-expressions",
+    "title": "Defining measurement point heuristics",
+    "section": "Valid point expressions",
+    "text": "Valid point expressions\nThe expression f1.max.prop_time defines the proportional time of F1 maximum. An entire point expression will always be of the format:\nformant.anchor.time\nValid values for each slot are:\n\nFormants\n\nf1, f2, f3, …\nAny formant that’s available\n\nAnchor\n\nmin\nmax\n\nTime\n\ntime\nrel_time\nprop_time\n\n\nAdditionally, any other mathematical expression can be included. For example, the original FAVE suite had a measurement point heuristic for /aw/ and /ow/ defined in the docs as:\n# - OW, AW measured halfway between beginning of segment and F1 maximum  ##\nThe heuristic file for this would look like:\n\nyaml\n\nheuristic: aw-ow-rule\ndefault:\n    prop_time: \"1/3\"\nspecifics:\n    - label: aw\n      prop_time: f1.max.prop_time / 2\n    - label: ow\n      prop_time: f1.max.prop_time / 2",
+    "crumbs": [
+      "Home",
+      "Usage",
+      "Defining measurement point heuristics"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "fave-measurement-point",
+    "section": "",
+    "text": "This is a package to easily define and access vowel formant measurement points.\n\nUsage\nThe way to define measurement point heuristics is documented here, but this package is not inteded to be directly used. Rather see the new-fave.",
+    "crumbs": [
+      "Home",
+      "fave-measurement-point"
+    ]
+  },
+  {
+    "objectID": "reference/index.html",
+    "href": "reference/index.html",
+    "title": "Function reference",
+    "section": "",
+    "text": "Classes for defining measurement point heuristics\n\n\n\nheuristic.Heuristic\nA measurement heuristic class\n\n\nheuristic.Specific\nA specific measurement point heuristic\n\n\n\n\n\n\nClasses for representing formant tracks and points\n\n\n\nformants.Formant\nA single formant\n\n\nformants.FormantArray\nA representation of multiple formant tracks\n\n\nformants.Point\nA single point\n\n\nformants.Slice\nA slice across formants\n\n\n\n\n\n\nHelper functions for parsing landmark expressions\n\n\n\nprocessor",
+    "crumbs": [
+      "Function reference"
+    ]
+  },
+  {
+    "objectID": "reference/index.html#hueristics",
+    "href": "reference/index.html#hueristics",
+    "title": "Function reference",
+    "section": "",
+    "text": "Classes for defining measurement point heuristics\n\n\n\nheuristic.Heuristic\nA measurement heuristic class\n\n\nheuristic.Specific\nA specific measurement point heuristic",
+    "crumbs": [
+      "Function reference"
+    ]
+  },
+  {
+    "objectID": "reference/index.html#formants",
+    "href": "reference/index.html#formants",
+    "title": "Function reference",
+    "section": "",
+    "text": "Classes for representing formant tracks and points\n\n\n\nformants.Formant\nA single formant\n\n\nformants.FormantArray\nA representation of multiple formant tracks\n\n\nformants.Point\nA single point\n\n\nformants.Slice\nA slice across formants",
+    "crumbs": [
+      "Function reference"
+    ]
+  },
+  {
+    "objectID": "reference/index.html#processors",
+    "href": "reference/index.html#processors",
+    "title": "Function reference",
+    "section": "",
+    "text": "Helper functions for parsing landmark expressions\n\n\n\nprocessor",
+    "crumbs": [
+      "Function reference"
+    ]
+  },
+  {
+    "objectID": "reference/processor.html",
+    "href": "reference/processor.html",
+    "title": "processor",
+    "section": "",
+    "text": "processor\n\n\n\n\n\nName\nDescription\n\n\n\n\nbuild_expressions\nBuild a list of valid landmark expressions\n\n\nevaluate_math\nEnsure the landmark expression is only\n\n\nfind_vars\nFind landmark variables in expression\n\n\ninject_values\nReplace landmark variable names with\n\n\nparse_expression\nParse a landmark expression and return\n\n\nrgetattr\ngets object attribute from string\n\n\n\n\n\nprocessor.build_expressions()\nBuild a list of valid landmark expressions\n\n\n\n\n\nType\nDescription\n\n\n\n\nlist[str]\nList of landmark regexes\n\n\n\n\n\n\n\nprocessor.evaluate_math(x)\nEnsure the landmark expression is only valid mathematical expressions.\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\nx\nstr\nThe numeric string\nrequired\n\n\n\n\n\n\n\n\n\nType\nDescription\n\n\n\n\nbool\nIf the string is only valid math, True. Else, False.\n\n\n\n\n\n\n\nprocessor.find_vars(expression)\nFind landmark variables in expression\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\nexpression\nstr\nAn expression defining a landmark location\nrequired\n\n\n\n\n\n\n\n\n\nType\nDescription\n\n\n\n\nlist[str]\nList of landmark variables\n\n\n\n\n\n\n\nprocessor.inject_values(expression, formants)\nReplace landmark variable names with numeric strings.\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\nexpression\nstr\nA landmark expression\nrequired\n\n\nformants\nFormantArray\nThe formant array from which to get the numeric values\nrequired\n\n\n\n\n\n\n\n\n\nType\nDescription\n\n\n\n\nstr\nThe numeric string\n\n\n\n\n\n\n\nprocessor.parse_expression(expression, formants)\nParse a landmark expression and return the resulting numeric value.\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\nexpression\nstr\nA landmark expression\nrequired\n\n\nformants\nFormantArray\nThe formant array with which to evaluate the expression\nrequired\n\n\n\n\n\n\n\n\n\nType\nDescription\n\n\n\n\nfloat\nThe resulting value\n\n\n\n\n\n\n\nprocessor.rgetattr(obj, attr, *args)\ngets object attribute from string\n\n\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\nobj\ntype\nobject\nrequired\n\n\nattr\nstr\nattribute path attr.attr.attr\nrequired",
+    "crumbs": [
+      "Processors",
+      "processor"
+    ]
+  },
+  {
+    "objectID": "reference/processor.html#functions",
+    "href": "reference/processor.html#functions",
+    "title": "processor",
+    "section": "",
+    "text": "Name\nDescription\n\n\n\n\nbuild_expressions\nBuild a list of valid landmark expressions\n\n\nevaluate_math\nEnsure the landmark expression is only\n\n\nfind_vars\nFind landmark variables in expression\n\n\ninject_values\nReplace landmark variable names with\n\n\nparse_expression\nParse a landmark expression and return\n\n\nrgetattr\ngets object attribute from string\n\n\n\n\n\nprocessor.build_expressions()\nBuild a list of valid landmark expressions\n\n\n\n\n\nType\nDescription\n\n\n\n\nlist[str]\nList of landmark regexes\n\n\n\n\n\n\n\nprocessor.evaluate_math(x)\nEnsure the landmark expression is only valid mathematical expressions.\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\nx\nstr\nThe numeric string\nrequired\n\n\n\n\n\n\n\n\n\nType\nDescription\n\n\n\n\nbool\nIf the string is only valid math, True. Else, False.\n\n\n\n\n\n\n\nprocessor.find_vars(expression)\nFind landmark variables in expression\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\nexpression\nstr\nAn expression defining a landmark location\nrequired\n\n\n\n\n\n\n\n\n\nType\nDescription\n\n\n\n\nlist[str]\nList of landmark variables\n\n\n\n\n\n\n\nprocessor.inject_values(expression, formants)\nReplace landmark variable names with numeric strings.\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\nexpression\nstr\nA landmark expression\nrequired\n\n\nformants\nFormantArray\nThe formant array from which to get the numeric values\nrequired\n\n\n\n\n\n\n\n\n\nType\nDescription\n\n\n\n\nstr\nThe numeric string\n\n\n\n\n\n\n\nprocessor.parse_expression(expression, formants)\nParse a landmark expression and return the resulting numeric value.\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\nexpression\nstr\nA landmark expression\nrequired\n\n\nformants\nFormantArray\nThe formant array with which to evaluate the expression\nrequired\n\n\n\n\n\n\n\n\n\nType\nDescription\n\n\n\n\nfloat\nThe resulting value\n\n\n\n\n\n\n\nprocessor.rgetattr(obj, attr, *args)\ngets object attribute from string\n\n\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\nobj\ntype\nobject\nrequired\n\n\nattr\nstr\nattribute path attr.attr.attr\nrequired",
+    "crumbs": [
+      "Processors",
+      "processor"
+    ]
+  },
+  {
+    "objectID": "reference/formants.Point.html",
+    "href": "reference/formants.Point.html",
+    "title": "formants.Point",
+    "section": "",
+    "text": "formants.Point(self, value, time, rel_time, prop_time, index)\nA single point\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\nvalue\nfloat\nFormant value\nrequired\n\n\ntime\nfloat\nTime of point\nrequired\n\n\nrel_time\nfloat\nRelative time of point\nrequired\n\n\nprop_time\nfloat\nProportional time of point\nrequired\n\n\nindex\nint\nIndex of point\nrequired",
+    "crumbs": [
+      "Formants",
+      "formants.Point"
+    ]
+  },
+  {
+    "objectID": "reference/formants.Point.html#parameters",
+    "href": "reference/formants.Point.html#parameters",
+    "title": "formants.Point",
+    "section": "",
+    "text": "Name\nType\nDescription\nDefault\n\n\n\n\nvalue\nfloat\nFormant value\nrequired\n\n\ntime\nfloat\nTime of point\nrequired\n\n\nrel_time\nfloat\nRelative time of point\nrequired\n\n\nprop_time\nfloat\nProportional time of point\nrequired\n\n\nindex\nint\nIndex of point\nrequired",
+    "crumbs": [
+      "Formants",
+      "formants.Point"
+    ]
+  },
+  {
+    "objectID": "reference/formants.FormantArray.html",
+    "href": "reference/formants.FormantArray.html",
+    "title": "formants.FormantArray",
+    "section": "",
+    "text": "formants.FormantArray(self, array, time=lambda: np.array([])(), offset=0)\nA representation of multiple formant tracks\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\narray\nnp.array\nAn array of formant tracks\nrequired\n\n\ntime\nnp.array | None\nThe time domain of the formant tracks. Optional.\nlambda: np.array([])()\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\n\n\n\n\nrel_time\nnp.array\nThe relative time domain\n\n\nprop_time\nnp.array\nThe proportional time domain\n\n\nf[1,\n2, 3, …] (np.array\nSpecific formant tracks.\n\n\n\n\n\n\n\n\n\nName\nDescription\n\n\n\n\nget_slice_at\nGet a formant slice at some time point.\n\n\n\n\n\nformants.FormantArray.get_slice_at(time=None, rel_time=None, prop_time=None)\nGet a formant slice at some time point.\nOne, and only one, of the time arguments (time, rel_time, prop_time) must be specified.\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\ntime\nfloat\nThe absolute time of the slice. Defaults to None.\nNone\n\n\nrel_time\nfloat\nThe relative time of the slice. Defaults to None.\nNone\n\n\nprop_time\nfloat\nThe proportional time of the slice. Defaults to None.\nNone\n\n\n\n\n\n\n\n\n\nType\nDescription\n\n\n\n\nSlice\nA formant slice at the specified time.",
+    "crumbs": [
+      "Formants",
+      "formants.FormantArray"
+    ]
+  },
+  {
+    "objectID": "reference/formants.FormantArray.html#parameters",
+    "href": "reference/formants.FormantArray.html#parameters",
+    "title": "formants.FormantArray",
+    "section": "",
+    "text": "Name\nType\nDescription\nDefault\n\n\n\n\narray\nnp.array\nAn array of formant tracks\nrequired\n\n\ntime\nnp.array | None\nThe time domain of the formant tracks. Optional.\nlambda: np.array([])()",
+    "crumbs": [
+      "Formants",
+      "formants.FormantArray"
+    ]
+  },
+  {
+    "objectID": "reference/formants.FormantArray.html#attributes",
+    "href": "reference/formants.FormantArray.html#attributes",
+    "title": "formants.FormantArray",
+    "section": "",
+    "text": "Name\nType\nDescription\n\n\n\n\nrel_time\nnp.array\nThe relative time domain\n\n\nprop_time\nnp.array\nThe proportional time domain\n\n\nf[1,\n2, 3, …] (np.array\nSpecific formant tracks.",
+    "crumbs": [
+      "Formants",
+      "formants.FormantArray"
+    ]
+  },
+  {
+    "objectID": "reference/formants.FormantArray.html#methods",
+    "href": "reference/formants.FormantArray.html#methods",
+    "title": "formants.FormantArray",
+    "section": "",
+    "text": "Name\nDescription\n\n\n\n\nget_slice_at\nGet a formant slice at some time point.\n\n\n\n\n\nformants.FormantArray.get_slice_at(time=None, rel_time=None, prop_time=None)\nGet a formant slice at some time point.\nOne, and only one, of the time arguments (time, rel_time, prop_time) must be specified.\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\ntime\nfloat\nThe absolute time of the slice. Defaults to None.\nNone\n\n\nrel_time\nfloat\nThe relative time of the slice. Defaults to None.\nNone\n\n\nprop_time\nfloat\nThe proportional time of the slice. Defaults to None.\nNone\n\n\n\n\n\n\n\n\n\nType\nDescription\n\n\n\n\nSlice\nA formant slice at the specified time.",
+    "crumbs": [
+      "Formants",
+      "formants.FormantArray"
     ]
   }
 ]
