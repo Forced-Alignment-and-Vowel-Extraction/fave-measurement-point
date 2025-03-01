@@ -1,6 +1,4 @@
 import numpy as np
-from nptyping import NDArray
-
 from dataclasses import dataclass, field
 
 @dataclass
@@ -45,7 +43,7 @@ class Slice():
         f[1,2,3,...] (float):
             Specific formant values at the slice.
     """
-    formants: NDArray
+    formants: np.ndarray
     time: float
     rel_time: float
     prop_time: float
@@ -94,8 +92,8 @@ class Formant():
         min (Point):
             A Point for the formant minimum
     """
-    track: NDArray
-    time: NDArray = field(default_factory=lambda: np.array([]))
+    track: np.ndarray
+    time: np.ndarray = field(default_factory=lambda: np.array([]))
     offset: float = field(default=0)
 
     def __post_init__(self):
@@ -150,8 +148,8 @@ class FormantArray():
             Specific formant tracks.
 
     """
-    array: NDArray
-    time: NDArray = field(default_factory=lambda: np.array([]))
+    array: np.ndarray
+    time: np.ndarray = field(default_factory=lambda: np.array([]))
     offset: float = field(default=0)
 
     def __post_init__(self):
